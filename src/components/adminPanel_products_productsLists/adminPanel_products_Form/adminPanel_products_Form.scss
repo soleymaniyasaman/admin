@@ -1,0 +1,120 @@
+.bodyForm_s{
+    height: 100%;
+    width: 1030px;
+    background-color: #FFFFFF;
+    margin-top: 6px;
+    margin-left: 36px;
+    margin-right: 30px;
+    border-radius: 17px;
+    text-align: start;
+}
+.font_title_name{
+    color: #808080;
+    font-size: 18px;
+    letter-spacing: 0;
+    margin-bottom: 7px;
+}
+.bg_input{
+    background-color: #F4F4F4;
+    color: #80808060;
+    border: none;
+    border-radius: 7px;
+    box-shadow: none;
+    outline: none;
+}
+.checkbox_input{
+    height: 33px;
+  width: 33px;
+  background-color: #F4F4F4;
+  border: none;
+  align-items: center;
+  
+}
+.selected_input{
+    color:#C0C0C0;
+    font-size: 15px;
+    background-position:5% ;
+  
+}
+.w_120{
+width: 138%!important;
+text-align: center;
+}
+.font_size_20{
+  font-size: 20px;
+  color:#C0C0C0;
+
+}
+.datePicker{
+  border: none;
+  background-color: #F4F4F4;
+  color:#C0C0C0;
+
+  width: 170px;
+}
+.margin_right25{
+  margin-right: -25px;
+}
+.colorHr{
+  color:#C0C0C0;
+margin-top: 10px;
+}
+.text_center{
+  text-align: center;
+}
+@mixin placeholder-color ($color, $focus) {
+    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: $color;
+      font-size: 15px;
+
+      &:focus{
+        &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+          color: $focus;
+          font-size: 15px;
+
+        }
+      }
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color: $color;
+     opacity:  1;
+     font-size: 15px;
+     &:focus{
+       &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+          color: $focus;
+          opacity:  1;
+          font-size: 15px;
+
+       }
+     }
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color: $color;
+     opacity:  1;
+     font-size: 15px;
+
+     &:focus{
+       &::-moz-placeholder { /* Mozilla Firefox 19+ */
+          color: $focus;
+          opacity:  1;
+          font-size: 15px;
+
+       }
+     }
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: $color;
+     font-size: 15px;
+
+     &:focus{
+       &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color: $focus;
+          font-size: 15px;
+
+       }
+     }
+   }
+  }
+  .input_text{  
+  @include placeholder-color(#C0C0C0, #C0C0C0);
+  }

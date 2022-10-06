@@ -1,0 +1,183 @@
+#table{
+    border-collapse: collapse;
+    text-align:center;
+    font-family: inherit;
+    th{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        }
+    thead{
+        background-color: #6699CC;
+        :first-child{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+        :last-child{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius:10px ;
+        }
+        :nth-child(n){
+            border: none;           
+        }
+
+    }
+    tbody{
+        background-color: #F4F4F4;
+        // font-size: 13px;
+
+            :first-child{
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+    
+            }
+            :last-child{
+                border-top-left-radius: 20px;
+                border-bottom-left-radius:20px ;
+            }
+            :nth-child(n){
+                border: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        
+    }
+}
+.adminPanel_products_productsLists_table_container{
+    margin-right: 13px;
+    margin-top: -61px;}
+.adminPanel_products_productsLists_table_header{
+    // height: 10px;
+    font-size: 11px;
+    color: #ffffff;
+    right: 0;
+}
+.adminPanel_products_productsLists_table_pic{
+    height: 30px;
+    border-radius: 0 !important;
+}
+.priceComponent_tableBody{
+    font: "BRYekan";
+    
+}
+.PriceComponent_tableColorContainer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-right: 1.9vw;
+        .PriceComponent_tableColor{
+            // width: 2rem;
+            // height: 2rem;
+            border-radius: 50px;
+            position: absolute;
+            // bottom: 29%;
+        }
+    }
+.icon{
+    margin: 2px;
+}
+
+.PriceComponent_tablePrice{
+    opacity: 0.6;
+  font-family: "BYekan";
+    // font-size: 16px;
+    text-align: center;
+    // letter-spacing: -4px;
+
+}
+.adminPanel_products_products_productsList_table_icon{
+    // font-size: 18px;
+    opacity: 0.6;
+    color: black;
+}
+.checkIcon{
+    background-color: rgb(21, 136, 21);
+    width: 18px;
+    padding: 3px;
+    color: #fff;
+}
+.adminPanel_products_productsLists_table_searchBox{
+    // width: 13.6vw;
+    border-radius: 80px;
+    height: 33px;
+    background-color: #6699CC;
+    opacity: 0.6;
+
+    &:focus {
+        background-color: #6699CC ;
+        box-shadow: none
+        }
+}
+.adminPanel_products_productsLists_table_search{
+    width: 100%;
+    ::placeholder{
+        color: #ffffff;
+        font-size: 14px;
+    }
+    .priceComponent_tableSearchBoxImg{
+        position: absolute;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 1380px) {
+.adminPanel_products_productsLists_table_container{
+    max-width: 1045px;
+}
+.adminPanel_products_productsLists_table_searchBox{
+    width: 16rem;
+}
+.priceComponent_tableSearchBoxImg{
+    margin-top: -34px;
+    left: 5%;
+}
+.PriceComponent_tableColor{
+    width: 2rem;
+    height: 2rem;}
+}
+@media screen and (max-width: 1380px) {
+.adminPanel_products_productsLists_table_container{
+    max-width: 76vw;
+}
+.adminPanel_products_productsLists_table_searchBox{
+    width: 14rem;
+}
+.priceComponent_tableSearchBoxImg{
+    margin-top: 7px;
+    left: 8%;
+}
+.PriceComponent_tableColor{
+    width: 1rem;
+    height: 1rem;}
+}
+@media screen and (max-width: 1298px) {
+.priceComponent_tableSearchBoxImg{
+    margin-top: -34px;
+    right: 13rem;
+}
+}
+@media screen and (min-width: 985px) {
+    #table tbody :nth-child(n){
+        margin-right: 4%;
+        font-size: 100%;
+    }
+    .adminPanel_products_products_productsList_table_icon{
+        font-size: 136% !important;
+    }
+    .PriceComponent_tablePrice{
+        font-size: 100%;
+
+    }
+}
+@media screen and (max-width: 985px) {
+    #table tbody :nth-child(n){
+        margin-right: 0;
+        font-size: 1.3vw;
+    }
+    .adminPanel_products_products_productsList_table_icon{
+        font-size: 1.8vw !important;
+    }
+    .PriceComponent_tablePrice{
+        font-size: 1.3vw;
+    }
+}
